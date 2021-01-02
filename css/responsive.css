@@ -1,0 +1,66 @@
+                            @media screen and (max-width:700px) {
+                                header .container nav a {
+                                    display: none;
+                                }
+                                .botao1,
+                                .botao2 {
+                                    margin-top: 5px;
+                                    width: 150px;
+                                    height: 60px;
+                                }
+                                .filme-principal .descricao {
+                                    margin-bottom: 40px;
+                                    width: 60%;
+                                }
+                            }
+                            
+                            @media screen and (max-width:360px) {
+                                body {
+                                    font-size: 12px;
+                                }
+                                header {
+                                    background: #141414;
+                                    height: 60px;
+                                }
+                                header .container .icon {
+                                    display: flex;
+                                    margin: 5px 0 0 200px;
+                                    align-content: center;
+                                    justify-content: center;
+                                    font-size: 25px;
+                                    font-weight: 100;
+                                }
+                                header .container img {
+                                    height: 40px;
+                                }
+                                header a {
+                                    display: none;
+                                }
+                                .title {
+                                    width: 98%;
+                                    height: 150px;
+                                    margin-top: 20px;
+                                }
+                                .botao1,
+                                .botao2 {
+                                    margin-top: 2px;
+                                    width: 150px;
+                                    height: 40px;
+                                    margin-right: 15px;
+                                    font-size: 11px;
+                                }
+                                .botao1 i,
+                                .botao2 i {
+                                    font-size: 11px;
+                                }
+                                .filme-principal {
+                                    font-size: 12px;
+                                    height: 450px;
+                                    background-image: linear-gradient(rgba(0, 0, 0, .40), rgba(0, 0, 0, .40)100%), url('/images/capa-interstellar.jpg');
+                                }
+                                .filme-principal .container .descricao {
+                                    width: 310px;
+                                    margin-top: 10px;
+                                    margin-bottom: 30px;
+                                }
+                            }
