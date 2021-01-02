@@ -1,2 +1,2 @@
-#Projeto Clone Netflix
-## Projeto do BootCamp Everis
+###	Bootcamp Fullstack Everis - Digital Innovation One
+##  Projeto Clone Netflix
