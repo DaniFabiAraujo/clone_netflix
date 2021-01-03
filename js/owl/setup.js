@@ -25,7 +25,7 @@ $(() => {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 3,
+                items: 2,
             },
             600: {
                 items: 3,
@@ -43,7 +43,7 @@ $(() => {
         responsiveClass: true,
         responsive: {
             0: {
-                items: 3,
+                items: 2,
             },
             600: {
                 items: 3,
