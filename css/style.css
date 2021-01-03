@@ -1,156 +1,332 @@
-    @font-face {
-        font-family: 'Netflix Sans';
-        font-weight: 300;
-        font-display: optional;
-        src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
-    }
-    
-     :root {
-        --vermelha: #e50914;
-        --preta: #141414;
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        color: white;
-        background: var(--preta);
-        font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        ;
-    }
-    
-    header {
-        position: fixed;
-        width: 100%;
-        z-index: 10000;
-        font-size: 14px;
-        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.04));
-    }
-    
-    header.sticky {
-        height: 60px;
-        background: var(--preta);
-        align-items: center;
-        transition: .3s ease all;
-    }
-    
-    header .container {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    
-    header .container .icon {
-        color: #fff;
-        font-size: 20px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    header .container img {
-        height: 40px;
-        margin-top: 10px;
-    }
-    
-    header nav a {
-        text-decoration: none;
-        color: #fff;
-        margin-right: 10px;
-        margin-left: 20px;
-    }
-    
-    header nav a:hover {
-        color: #AAA;
-    }
-    /**Filme principal*/
-    
-    .filme-principal {
-        font-size: 16px;
-        background: linear-gradient(rgba(0, 0, 0, .40), rgba(0, 0, 0, .40)100%), url('/images/capa.jpg');
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .title {
-        height: 200px;
-        width: 500px;
-        background-image: url(/images/title-logo.jpg);
-    }
-    
-    .filme-principal .title img {
-        width: 100%;
-    }
-    
-    .filme-principal .descricao {
-        margin-bottom: 40px;
-        width: 60%;
-    }
-    /*.filme-principal .titulo {
-    margin-top: 5%;
-    font-size: 40px;
-    font-family: 'GFS Didot';
-}
-*/
-    
-    .filme-principal .botao1 {
-        background-color: #ffffff;
-        border: none;
-        color: black;
-        padding: 10px 20px;
-        margin-right: 15px;
-        border-radius: 5%;
-        cursor: pointer;
-    }
-    
-    .filme-principal .botao2 {
-        background-color: #6D6D6eb3;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        margin-right: 15px;
-        border-radius: 5%;
-        cursor: pointer;
-    }
-    
-    .filme-principal .botao1:hover,
-    .botao2:hover {
-        background-color: #AAA;
-        color: black;
-        transition: .3s ease all;
-    }
-    
-    .filme-principal .botao i {
-        margin-right: 8px;
-    }
-    
-    .container {
-        margin-left: 20px;
-    }
-    
-    .filme-principal .container {
-        width: 70%;
-    }
-    
-    .item {
-        height: 350px;
-        width: 100%;
-    }
-    
-    .carrossel-filmes {
-        margin: 10px;
-    }
-    
-    .box-filme {
-        height: 100%;
-        width: 100%;
-        display: block;
-        border-radius: 3%;
-    }
+                        @font-face {
+                            font-family: 'Netflix Sans';
+                            font-weight: 300;
+                            font-display: optional;
+                            src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+                        }
+                        
+                         :root {
+                            --vermelha: #e50914;
+                            --preta: #141414;
+                        }
+                        
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        body {
+                            color: white;
+                            background: var(--preta);
+                            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        }
+                        
+                        header {
+                            position: fixed;
+                            width: 100%;
+                            z-index: 10000;
+                            font-size: 14px;
+                            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.04));
+                        }
+                        
+                        header.sticky {
+                            height: 60px;
+                            background: var(--preta);
+                            align-items: center;
+                            transition: .3s ease all;
+                        }
+                        
+                        header .container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                        }
+                        
+                        header .container .icon {
+                            color: #fff;
+                            font-size: 20px;
+                            cursor: pointer;
+                            display: none;
+                        }
+                        
+                        header .container img {
+                            height: 40px;
+                            margin-top: 10px;
+                        }
+                        
+                        header nav a {
+                            text-decoration: none;
+                            color: #fff;
+                            margin-right: 10px;
+                            margin-left: 20px;
+                        }
+                        
+                        header nav a:hover {
+                            color: #AAA;
+                        }
+                        /**Filme principal*/
+                        
+                        .filme-principal {
+                            font-size: 16px;
+                            background: linear-gradient(rgba(0, 0, 0, .40), rgba(0, 0, 0, .40)100%), url('/images/capa.jpg');
+                            height: 80vh;
+                            background-size: cover;
+                            background-position: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        
+                        .title {
+                            height: 200px;
+                            width: 500px;
+                            background-image: url(/images/title-logo.jpg);
+                        }
+                        
+                        .filme-principal .title img {
+                            width: 100%;
+                        }
+                        
+                        .filme-principal .descricao {
+                            margin-bottom: 40px;
+                            width: 60%;
+                        }
+                        
+                        .filme-principal .botao1 {
+                            background-color: #ffffff;
+                            border: none;
+                            color: black;
+                            padding: 12px 20px;
+                            margin-right: 15px;
+                            border-radius: 5%;
+                            cursor: pointer;
+                        }
+                        
+                        .filme-principal .botao2 {
+                            background-color: #6D6D6eb3;
+                            border: none;
+                            color: white;
+                            padding: 12px 20px;
+                            margin-right: 15px;
+                            border-radius: 5%;
+                            cursor: pointer;
+                        }
+                        
+                        .filme-principal .botao1:hover,
+                        .botao2:hover {
+                            background-color: #AAA;
+                            color: black;
+                            transition: .3s ease all;
+                        }
+                        
+                        .filme-principal .botao i {
+                            margin-right: 8px;
+                        }
+                        
+                        .filme-principal .botao2 a {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                        
+                        .filme-principal .botao2 a:hover {
+                            color: black;
+                        }
+                        
+                        .container {
+                            margin-left: 20px;
+                        }
+                        
+                        .filme-principal .container {
+                            width: 70%;
+                        }
+                        
+                        .item {
+                            height: 350px;
+                            width: 100%;
+                        }
+                        
+                        .carrossel-filmes {
+                            margin: 15px;
+                        }
+                        
+                        .carrossel-filmes h4 {
+                            margin: 10px;
+                        }
+                        
+                        .box-filme {
+                            height: 100%;
+                            width: 100%;
+                            display: block;
+                            border-radius: 3%;
+                        }
+                        /* FOOTER */
+                        
+                        footer {
+                            padding: 20px 0;
+                            color: #6D6D6eb3;
+                            margin-top: 60px;
+                            height: 200px;
+                            width: 100%;
+                            text-align: center;
+                            align-items: center;
+                        }
+                        
+                        footer ul {
+                            margin: 10px;
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        
+                        footer li {
+                            margin-right: 10px;
+                        }
+                        
+                        footer i {
+                            font-size: 30px;
+                        }
+                        
+                        footer i:hover {
+                            cursor: pointer;
+                            color: #fff;
+                        }
+                        
+                        footer ul a {
+                            text-decoration: none;
+                        }
+                        /*MORE INFORMATIONS PAGE*/
+                        
+                        .card {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            color: #ffffff;
+                            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                            box-sizing: border-box;
+                            transition: .3s;
+                        }
+                        
+                        .imgbox {
+                            max-width: 350px;
+                            margin-top: 8%;
+                            border: 1px solid #333;
+                            border-right: 0;
+                        }
+                        
+                        .imgbox img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .descr {
+                            max-width: 350px;
+                            background: var(--preta);
+                            padding: 20px;
+                            border: 1px solid #333;
+                            border-left: 0;
+                            margin-top: 8%;
+                        }
+                        
+                        .descr h2 {
+                            font-size: 2.0em;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                        
+                        .descr h3 {
+                            font-size: 1.2em;
+                            text-align: left;
+                        }
+                        
+                        .descr ul {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            list-style: none;
+                            margin: 10px 0;
+                            font-size: 13px;
+                            line-height: 13px;
+                        }
+                        
+                        .rating li {
+                            font-size: 22px;
+                            line-height: 22px;
+                            margin-bottom: 10px;
+                        }
+                        
+                        .rating li:hover {
+                            color: var(--vermelha);
+                        }
+                        
+                        .textContent p {
+                            font-size: 0.9em;
+                            margin-top: 10px;
+                        }
+                        
+                        .textContent p i {
+                            font-size: 1.2em;
+                            text-align: center;
+                            margin-top: 15px;
+                            color: var(--vermelha);
+                        }
+                        
+                        .textContent a {
+                            display: inline-block;
+                            margin-top: 10px;
+                            font-size: 1.2em;
+                            text-decoration: none;
+                            color: var(--vermelha);
+                        }
+                        
+                        .textContent a:hover {
+                            color: white;
+                        }
+                        
+                        .btn3 {
+                            margin: 10px 0;
+                            width: 100%;
+                            padding: 10px;
+                            background: #fff;
+                            color: var(--preta);
+                            font-size: 1em;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            border: none;
+                        }
+                        
+                        .btn3:hover {
+                            color: #000;
+                            background: var(--vermelha);
+                        }
+                        
+                        .trailer {
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(0, 0, 0, .9);
+                            z-index: 10;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                        
+                        .trailer video {
+                            max-width: 900px;
+                            outline: none;
+                            position: relative;
+                        }
+                        
+                        .close {
+                            position: absolute;
+                            top: 30px;
+                            right: 30px;
+                            color: #fff;
+                            font-size: 42px;
+                            cursor: pointer;
+                        }

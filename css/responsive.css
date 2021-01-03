@@ -1,4 +1,4 @@
-                            @media screen and (max-width:700px) {
+                            @media screen and (max-width:900px) {
                                 header .container nav a {
                                     display: none;
                                 }
@@ -11,6 +11,12 @@
                                 .filme-principal .descricao {
                                     margin-bottom: 40px;
                                     width: 60%;
+                                }
+                            }
+                            
+                            @media (max-width: 901px) {
+                                .trailer video {
+                                    max-width: 90%;
                                 }
                             }
                             
@@ -62,5 +68,15 @@
                                     width: 310px;
                                     margin-top: 10px;
                                     margin-bottom: 30px;
+                                }
+                                .item {
+                                    height: 170px;
+                                }
+                                .imgbox {
+                                    border: none;
+                                }
+                                .descr {
+                                    border: none;
+                                    margin-top: 3%;
                                 }
                             }

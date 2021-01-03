@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>More Informations</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="https://fontmeme.com/permalink/201228/69dfe28dc8c9bdcdb8ca6878bedab0b5.png" alt="netflix-font" border="0"></a>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="card">
+        <div class="imgbox">
+            <img src="/images/inf1.jpg">
+        </div>
+        <div class="descr">
+            <h2>Interstelar</h2>
+            <ul>
+                <li>2014</li>
+                <li>02h49m</li>
+                <li>Aventura, Drama, Ficção científica</li>
+            </ul>
+            <ul class="rating">
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+                <li><i class="fas fa-star"></i></li>
+            </ul>
+            <div class="textContent">
+                <p><i>O fim da terra não será o nosso fim.</i></p>
+                <p>
+                    <h3>Sinopse</h3>
+                </p>
+                <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o
+                    grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar. Christopher Nolan</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <button class="btn3"><i class="fa fa-play"></i> Assista ao trailer</button>
+        </div>
+        </section>
+
+        <div class="trailer">
+            <video src="/trailer.mp4" controls="true"></video>
+
+            <span class="close">&times;</span>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <h2>Daniel Araújo</h2>
+            <h4>Contato</h4>
+            <ul>
+                <li><i class="fa fa fa-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100008294644428" target="_blank"></a>
+                </li>
+                <li><i class="fa fa fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/daniel-ara%C3%BAjo-2020/" target="_blank"></a>
+                </li>
+                <li><i class="fa fa fa-github"></i>
+                    <a href="https://github.com/DaniFabiAraujo" target="_blank"></a>
+                </li>
+
+
+            </ul>
+        </footer>
+        <script>
+            const button = document.querySelector("button");
+            const close = document.querySelector(".close");
+            const trailer = document.querySelector(".trailer");
+            const video = document.querySelector("video");
+
+            button.addEventListener('click', () => {
+                trailer.style.visibility = "visible";
+                trailer.style.opacity = 1;
+            });
+
+            close.addEventListener('click', () => {
+                trailer.style.visibility = "hidden";
+                trailer.style.opacity = 0;
+
+                video.pause();
+                video.currentTime = 0;
+            });
+        </script>
+        <script src="https://kit.fontawesome.com/1d48f14138.js" crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
+</body>
+
+</html>
