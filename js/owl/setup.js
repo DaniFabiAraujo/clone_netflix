@@ -21,11 +21,12 @@ $(() => {
     $('#carousel1').owlCarousel({
         loop: true,
         margin: 5,
-        nav: false,
-        responsiveClass: true,
+        items: 5,
+        touchDrag: true,
+        dots: false,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
             },
             600: {
                 items: 3,
@@ -40,10 +41,11 @@ $(() => {
         loop: true,
         margin: 5,
         nav: false,
-        responsiveClass: true,
+        touchDrag: true,
+        dots: false,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
             },
             600: {
                 items: 3,
